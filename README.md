@@ -1,46 +1,103 @@
-# Getting Started with Create React App
+# MERN Slot Booker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The MERN Slot Booker App is a full-stack web application that allows users to book appointments for available time slots. Users can select a date from the calendar, choose a time slot, and book an appointment. The app provides an interactive calendar view, a list of available time slots, booking functionality, and the ability to delete booked appointments.
 
-## Available Scripts
+## [Live Link for the Project](https://slotbookie.netlify.app/)
+```bash
+https://slotbookie.netlify.app/
+```
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Interactive calendar view for selecting appointment dates.
+- List of available time slots for each selected date.
+- Booking and deleting appointments with confirmation.
+- Highlighting of selected date on the calendar.
+- Persistent data storage using MongoDB.
+- Backend API built using Node.js and Express.
+- Frontend built with React.js.
+- User authentication for secure access.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (https://nodejs.org/)
+- MongoDB (https://www.mongodb.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/Ruthvik3113/MERN-Slot-Booking.git
+```
+### Change the Project Directory
 
-### `npm run eject`
+```bash
+cd mern-slot-booker
+```
+### Install server Dependencies
+```bash
+cd server
+npm install
+```
+### Install Client Dependencies
+```bash
+cd ../client
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage
+Start the MongoDB server.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the backend server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+cd server
+npm start
+```
+Start the frontend development server
+```bash
+cd ../client
+npm start
+```
+Open your web browser and navigate to http://localhost:3000 to use the app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Select a date from the calendar to see available time slots.
 
-## Learn More
+Click on a time slot to choose and book an appointment.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To delete a booked appointment, click on the appointment card.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
+- MongoDB
+- Express.js
+- React.js
+- Node.js
+- react-big-calendar library
+- moment.js
+- Tailwind CSS
+
+## Contributing
+Contributions are welcome! If you find a bug or want to add a new feature, feel free to submit a pull request.
+
+- Fork the repository.
+- Create a new branch for your feature or bug fix: git checkout -b feature-name
+- Make your changes and commit them: git commit -am 'Add some feature'
+- Push to the branch: git push origin feature-name
+- Create a new Pull Request.
+## License
+This project is licensed under the MIT License.
