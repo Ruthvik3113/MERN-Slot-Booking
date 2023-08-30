@@ -1,25 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { AuthProvider } from './components/AuthContext';
+import CalendarView from './components/CalendarView'; // Assuming your CalendarView component file
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <div className="App bg-slate-400">
+        <h1 className='flex justify-center font-bold text-4xl text-gray-200 font-monogit'>SLOT BOOKIEE</h1>
+        <CalendarView />
+      </div>
+    </AuthProvider>
   );
 }
 
