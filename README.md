@@ -25,7 +25,7 @@ https://slotbookie.netlify.app/
 - List of available time slots for each selected date.
 - Booking and deleting appointments with confirmation.
 - Highlighting of selected date on the calendar.
-- Persistent data storage using MongoDB.
+- Persistent data storage.
 - Backend API built using Node.js and Express.
 - Frontend built with React.js.
 - User authentication for secure access.
@@ -58,7 +58,7 @@ npm install
 ```bash
 cd ../client
 npm install
-```
+``` 
 
 ## Usage
 Start the MongoDB server.
